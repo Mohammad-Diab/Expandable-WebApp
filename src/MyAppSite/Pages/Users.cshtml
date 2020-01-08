@@ -1,0 +1,30 @@
+﻿@page
+@model MyAppSite.Pages.UsersModel
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-4">Users</h2>
+
+<div id="actions" class="mb-2">
+    <div id="no-selection mb-1">
+        <button class="btn btn-success" type="button">Add User</button>
+    </div>
+
+    <div class="d-none" id="with-selection  mt-1">
+        <button class="btn btn-danger float-left" type="button">Delete Items</button>
+        <span class="float-right bg-light d-inline-block">
+            3 Items Selected
+        </span>
+    </div>
+</div>
+
+<div id="user-table">
+</div>
+
+<script>
+    $(document).ready(function () {
+        loadUsersPage(1);
+    });
+</script>

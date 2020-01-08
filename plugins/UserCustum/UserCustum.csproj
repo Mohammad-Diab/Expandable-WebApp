@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Shared">
+      <HintPath>..\..\src\Shared\bin\$(Configuration)\netcoreapp3.0\Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="MyAppDB">
+      <HintPath>..\..\src\Shared\bin\$(Configuration)\netcoreapp3.0\MyAppDB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
